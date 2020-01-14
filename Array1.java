@@ -1,5 +1,5 @@
 import java.util.*;
-class Array2
+class Array1
 {
 	public static void main(String[] args)
 	{
@@ -10,12 +10,12 @@ class Array2
 		System.out.println("Enter "+a.length+" Numbers");
 		for(int i=0;i<a.length;i++)
 			a[i]= in.nextInt();
-		int sum=0;
+		int max= a[0];
 		for(int i=0; i<a.length; i++)
-			sum=sum+a[i];
-		double avg = (double)sum/a.length;
-		System.out.println("Sum= "+sum);
-		System.out.println("Average= "+avg);
-
+		{
+			if(a[i]>max)
+				max=a[i];
+		}
+		System.out.println("Maximum= "+max);
 	}
 }

@@ -1,5 +1,5 @@
 import java.util.*;
-class Array2
+class BubbleSort
 {
 	public static void main(String[] args)
 	{
@@ -8,14 +8,11 @@ class Array2
 		int n = in.nextInt();
 		int[] a = new int[n];
 		System.out.println("Enter "+a.length+" Numbers");
-		for(int i=0;i<a.length;i++)
+		int i=0, j=0;
+		for(i=0; i<a.length; i++)
 			a[i]= in.nextInt();
-		int sum=0;
-		for(int i=0; i<a.length; i++)
-			sum=sum+a[i];
-		double avg = (double)sum/a.length;
-		System.out.println("Sum= "+sum);
-		System.out.println("Average= "+avg);
-
+		for(i=0; i<a.length; i++)
+		{
+			for(j=0; j<
 	}
 }
