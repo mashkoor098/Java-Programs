@@ -12,7 +12,7 @@ class RevString
 		System.out.println("Reverse of Strings is ");
 		for(i=0; i<s.length; i++)
 		{
-			for(j=s[i].length(); j>=0; j--)
+			for(j=s[i].length()-1; j>=0; j--)
 			{
 				System.out.print(s[i].charAt(j));
 			}
